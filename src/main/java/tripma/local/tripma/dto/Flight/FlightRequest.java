@@ -1,4 +1,4 @@
-package tripma.local.tripma.dto;
+package tripma.local.tripma.dto.Flight;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

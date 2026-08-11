@@ -1,8 +1,8 @@
 package tripma.local.tripma.service;
 
 import org.springframework.stereotype.Service;
-import tripma.local.tripma.dto.FlightRequest;
-import tripma.local.tripma.dto.FlightResponse;
+import tripma.local.tripma.dto.Flight.FlightRequest;
+import tripma.local.tripma.dto.Flight.FlightResponse;
 import tripma.local.tripma.entity.Flight;
 import tripma.local.tripma.exception.ResourceNotFoundException;
 import tripma.local.tripma.repository.FlightRepository;
