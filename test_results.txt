@@ -1,0 +1,291 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< tripma.local:tripma >-------------------------
+[INFO] Building  0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ tripma ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ tripma ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ tripma ---
+[INFO] skip non existing resourceDirectory D:\HocTap\tripma\tripma\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ tripma ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.5.6:test (default-test) @ tripma ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running tripma.local.tripma.BookingServiceTest
+12:56:07.663 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [tripma.local.tripma.BookingServiceTest]: BookingServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:56:07.886 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration tripma.local.tripma.TripmaApplication for test class tripma.local.tripma.BookingServiceTest
+12:56:08.056 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [tripma.local.tripma.BookingServiceTest]: BookingServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:56:08.059 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration tripma.local.tripma.TripmaApplication for test class tripma.local.tripma.BookingServiceTest
+12:56:08.216 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.0)
+
+2026-08-12T12:56:08.700+07:00  INFO 25412 --- [tripma] [           main] tripma.local.tripma.BookingServiceTest   : Starting BookingServiceTest using Java 26.0.2 with PID 25412 (started by son25 in D:\HocTap\tripma\tripma)
+2026-08-12T12:56:08.710+07:00  INFO 25412 --- [tripma] [           main] tripma.local.tripma.BookingServiceTest   : No active profile set, falling back to 1 default profile: "default"
+2026-08-12T12:56:10.280+07:00  INFO 25412 --- [tripma] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-12T12:56:10.432+07:00  INFO 25412 --- [tripma] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 137 ms. Found 8 JPA repository interfaces.
+2026-08-12T12:56:11.158+07:00  INFO 25412 --- [tripma] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-12T12:56:11.260+07:00  INFO 25412 --- [tripma] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-12T12:56:12.157+07:00  INFO 25412 --- [tripma] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-12T12:56:12.225+07:00  INFO 25412 --- [tripma] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-12T12:56:12.493+07:00  INFO 25412 --- [tripma] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@11dbcb3b
+2026-08-12T12:56:12.496+07:00  INFO 25412 --- [tripma] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-12T12:56:12.576+07:00  WARN 25412 --- [tripma] [           main] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-08-12T12:56:12.610+07:00  INFO 25412 --- [tripma] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://127.0.0.1:3307/tripma_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: tripma_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-12T12:56:14.188+07:00  INFO 25412 --- [tripma] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-12T12:56:14.200+07:00  INFO 25412 --- [tripma] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-12T12:56:14.371+07:00  INFO 25412 --- [tripma] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-12T12:56:16.158+07:00  WARN 25412 --- [tripma] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-12T12:56:17.228+07:00  INFO 25412 --- [tripma] [           main] tripma.local.tripma.BookingServiceTest   : Started BookingServiceTest in 9.038 seconds (process running for 11.247)
+Hibernate: 
+    select
+        b1_0.booking_id,
+        b1_0.booking_code,
+        b1_0.dicount_amount,
+        b1_0.discount_code,
+        b1_0.status,
+        b1_0.total_price,
+        b1_0.type,
+        b1_0.user_id 
+    from
+        booking b1_0 
+    where
+        b1_0.booking_id=?
+Hibernate: 
+    select
+        b1_0.booking_id,
+        b1_0.booking_code,
+        b1_0.dicount_amount,
+        b1_0.discount_code,
+        b1_0.status,
+        b1_0.total_price,
+        b1_0.type,
+        b1_0.user_id 
+    from
+        booking b1_0 
+    where
+        b1_0.booking_id=?
+Hibernate: 
+    select
+        b1_0.booking_id,
+        b1_0.booking_code,
+        b1_0.dicount_amount,
+        b1_0.discount_code,
+        b1_0.status,
+        b1_0.total_price,
+        b1_0.type,
+        b1_0.user_id 
+    from
+        booking b1_0 
+    where
+        b1_0.booking_id=?
+Hibernate: 
+    select
+        b1_0.booking_id,
+        b1_0.booking_code,
+        b1_0.dicount_amount,
+        b1_0.discount_code,
+        b1_0.status,
+        b1_0.total_price,
+        b1_0.type,
+        b1_0.user_id 
+    from
+        booking b1_0 
+    where
+        b1_0.booking_id=?
+Hibernate: 
+    select
+        hb1_0.hotel_booking_id,
+        hb1_0.booking_id,
+        hb1_0.check_in,
+        hb1_0.check_out,
+        hb1_0.guests,
+        hb1_0.hotel_id,
+        hb1_0.total_price 
+    from
+        hotel_booking hb1_0 
+    where
+        hb1_0.booking_id=?
+Hibernate: 
+    select
+        b1_0.booking_id,
+        b1_0.booking_code,
+        b1_0.dicount_amount,
+        b1_0.discount_code,
+        b1_0.status,
+        b1_0.total_price,
+        b1_0.type,
+        b1_0.user_id 
+    from
+        booking b1_0 
+    where
+        b1_0.booking_id=?
+Hibernate: 
+    select
+        b1_0.booking_id,
+        b1_0.booking_code,
+        b1_0.dicount_amount,
+        b1_0.discount_code,
+        b1_0.status,
+        b1_0.total_price,
+        b1_0.type,
+        b1_0.user_id 
+    from
+        booking b1_0 
+    where
+        b1_0.booking_id=?
+Hibernate: 
+    select
+        b1_0.booking_id,
+        b1_0.booking_code,
+        b1_0.dicount_amount,
+        b1_0.discount_code,
+        b1_0.status,
+        b1_0.total_price,
+        b1_0.type,
+        b1_0.user_id 
+    from
+        booking b1_0 
+    where
+        b1_0.booking_id=?
+Hibernate: 
+    select
+        bf1_0.booking_flight_id,
+        bf1_0.booking_id,
+        bf1_0.cabin_class,
+        bf1_0.direction,
+        bf1_0.flight_id,
+        bf1_0.price 
+    from
+        booking_flight bf1_0 
+    where
+        bf1_0.booking_id=?
+Hibernate: 
+    select
+        f1_0.flight_id,
+        f1_0.aircraft_id,
+        f1_0.airline_id,
+        f1_0.arrival_airport_id,
+        f1_0.arrival_time,
+        f1_0.base_price,
+        f1_0.departure_airport_id,
+        f1_0.departure_time,
+        f1_0.flight_number 
+    from
+        flight f1_0 
+    where
+        f1_0.flight_id=?
+Hibernate: 
+    select
+        b1_0.booking_id,
+        b1_0.booking_code,
+        b1_0.dicount_amount,
+        b1_0.discount_code,
+        b1_0.status,
+        b1_0.total_price,
+        b1_0.type,
+        b1_0.user_id 
+    from
+        booking b1_0 
+    where
+        b1_0.booking_id=?
+Hibernate: 
+    select
+        pb1_0.package_booking_id,
+        pb1_0.booking_id,
+        pb1_0.package_id 
+    from
+        package_booking pb1_0 
+    where
+        pb1_0.booking_id=?
+[ERROR] Tests run: 8, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 11.01 s <<< FAILURE! -- in tripma.local.tripma.BookingServiceTest
+[ERROR] tripma.local.tripma.BookingServiceTest.testConfirmBooking_HappyPath -- Time elapsed: 0.019 s <<< ERROR!
+java.lang.IllegalArgumentException: L?i: Booking ?ã ???c xác nh?n!
+	at tripma.local.tripma.service.BookingService.confirmBooking(BookingService.java:156)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at tripma.local.tripma.service.BookingService$$SpringCGLIB$$0.confirmBooking(<generated>)
+	at tripma.local.tripma.BookingServiceTest.testConfirmBooking_HappyPath(BookingServiceTest.java:30)
+
+[INFO] Running tripma.local.tripma.FlightControllerTest
+2026-08-12T12:56:18.354+07:00  INFO 25412 --- [tripma] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [tripma.local.tripma.FlightControllerTest]: FlightControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-12T12:56:18.358+07:00  INFO 25412 --- [tripma] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration tripma.local.tripma.TripmaApplication for test class tripma.local.tripma.FlightControllerTest
+2026-08-12T12:56:18.361+07:00  INFO 25412 --- [tripma] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [tripma.local.tripma.FlightControllerTest]: FlightControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-12T12:56:18.365+07:00  INFO 25412 --- [tripma] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration tripma.local.tripma.TripmaApplication for test class tripma.local.tripma.FlightControllerTest
+Hibernate: 
+    select
+        count(*) 
+    from
+        flight f1_0
+Total flights in DB: 21
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 s -- in tripma.local.tripma.FlightControllerTest
+[INFO] Running tripma.local.tripma.TripmaApplicationTests
+2026-08-12T12:56:18.451+07:00  INFO 25412 --- [tripma] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [tripma.local.tripma.TripmaApplicationTests]: TripmaApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-12T12:56:18.454+07:00  INFO 25412 --- [tripma] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration tripma.local.tripma.TripmaApplication for test class tripma.local.tripma.TripmaApplicationTests
+2026-08-12T12:56:18.456+07:00  INFO 25412 --- [tripma] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [tripma.local.tripma.TripmaApplicationTests]: TripmaApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-12T12:56:18.457+07:00  INFO 25412 --- [tripma] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration tripma.local.tripma.TripmaApplication for test class tripma.local.tripma.TripmaApplicationTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s -- in tripma.local.tripma.TripmaApplicationTests
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   BookingServiceTest.testConfirmBooking_HappyPath:30 » IllegalArgument L?i: Booking ?ã ???c xác nh?n!
+[INFO] 
+[ERROR] Tests run: 10, Failures: 0, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  17.011 s
+[INFO] Finished at: 2026-08-12T12:56:18+07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.5.6:test (default-test) on project tripma: 
+[ERROR] 
+[ERROR] See D:\HocTap\tripma\tripma\target\surefire-reports for the individual test results.
+[ERROR] See dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

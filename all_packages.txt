@@ -1,0 +1,21 @@
+package_id	name	description	destination	price
+1	Travel Package 1	Package description 1	Da Nang	325
+2	Travel Package 2	Package description 2	Phu Quoc	350
+3	Travel Package 3	Package description 3	Bangkok	375
+4	Travel Package 4	Package description 4	Singapore	400
+5	Travel Package 5	Package description 5	Tokyo	425
+6	Travel Package 6	Package description 6	Da Nang	450
+7	Travel Package 7	Package description 7	Phu Quoc	475
+8	Travel Package 8	Package description 8	Bangkok	500
+9	Travel Package 9	Package description 9	Singapore	525
+10	Travel Package 10	Package description 10	Tokyo	550
+11	Travel Package 11	Package description 11	Da Nang	575
+12	Travel Package 12	Package description 12	Phu Quoc	600
+13	Travel Package 13	Package description 13	Bangkok	625
+14	Travel Package 14	Package description 14	Singapore	650
+15	Travel Package 15	Package description 15	Tokyo	675
+16	Travel Package 16	Package description 16	Da Nang	700
+17	Travel Package 17	Package description 17	Phu Quoc	725
+18	Travel Package 18	Package description 18	Bangkok	750
+19	Travel Package 19	Package description 19	Singapore	775
+20	Travel Package 20	Package description 20	Tokyo	800

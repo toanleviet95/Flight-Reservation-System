@@ -1,0 +1,7 @@
+Field	Type	Null	Key	Default	Extra
+booking_flight_id	int(11)	NO	PRI	NULL	auto_increment
+booking_id	int(11)	YES	MUL	NULL	
+flight_id	int(11)	YES		NULL	
+direction	varchar(255)	YES		NULL	
+cabin_class	varchar(255)	YES		NULL	
+price	decimal(10,0)	YES		NULL	

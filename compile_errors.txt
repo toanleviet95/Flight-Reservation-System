@@ -1,0 +1,108 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< tripma.local:tripma >-------------------------
+[INFO] Building  0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.5.0:clean (default-clean) @ tripma ---
+[INFO] Deleting D:\HocTap\tripma\tripma\target
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ tripma ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ tripma ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 42 source files with javac [debug parameters release 26] to target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /D:/HocTap/tripma/tripma/src/main/java/tripma/local/tripma/service/BookingService.java:[179,41] cannot find symbol
+  symbol:   variable flightBookingResponse
+  location: class tripma.local.tripma.service.BookingService
+[ERROR] /D:/HocTap/tripma/tripma/src/main/java/tripma/local/tripma/service/BookingService.java:[183,41] cannot find symbol
+  symbol:   variable hotelBookingResponse
+  location: class tripma.local.tripma.service.BookingService
+[ERROR] /D:/HocTap/tripma/tripma/src/main/java/tripma/local/tripma/service/BookingService.java:[187,41] cannot find symbol
+  symbol:   variable packageBookingResponse
+  location: class tripma.local.tripma.service.BookingService
+[ERROR] /D:/HocTap/tripma/tripma/src/main/java/tripma/local/tripma/dto/BookingFlight/BookingFlightResponse.java:[19,30] cannot find symbol
+  symbol:   method getId()
+  location: variable bookingFlight of type tripma.local.tripma.entity.BookingFlight
+[ERROR] /D:/HocTap/tripma/tripma/src/main/java/tripma/local/tripma/dto/BookingFlight/BookingFlightResponse.java:[20,30] cannot find symbol
+  symbol:   method getFlightNumber()
+  location: variable bookingFlight of type tripma.local.tripma.entity.BookingFlight
+[ERROR] /D:/HocTap/tripma/tripma/src/main/java/tripma/local/tripma/dto/BookingFlight/BookingFlightResponse.java:[21,30] cannot find symbol
+  symbol:   method getAirlineId()
+  location: variable bookingFlight of type tripma.local.tripma.entity.BookingFlight
+[ERROR] /D:/HocTap/tripma/tripma/src/main/java/tripma/local/tripma/dto/BookingFlight/BookingFlightResponse.java:[22,30] cannot find symbol
+  symbol:   method getDepartureAirportId()
+  location: variable bookingFlight of type tripma.local.tripma.entity.BookingFlight
+[ERROR] /D:/HocTap/tripma/tripma/src/main/java/tripma/local/tripma/dto/BookingFlight/BookingFlightResponse.java:[23,17] cannot find symbol
+  symbol:   variable flight
+  location: class tripma.local.tripma.dto.BookingFlight.BookingFlightResponse
+[ERROR] /D:/HocTap/tripma/tripma/src/main/java/tripma/local/tripma/dto/BookingFlight/BookingFlightResponse.java:[24,17] cannot find symbol
+  symbol:   variable flight
+  location: class tripma.local.tripma.dto.BookingFlight.BookingFlightResponse
+[ERROR] /D:/HocTap/tripma/tripma/src/main/java/tripma/local/tripma/dto/BookingFlight/BookingFlightResponse.java:[25,17] cannot find symbol
+  symbol:   variable flight
+  location: class tripma.local.tripma.dto.BookingFlight.BookingFlightResponse
+[ERROR] /D:/HocTap/tripma/tripma/src/main/java/tripma/local/tripma/dto/BookingFlight/BookingFlightResponse.java:[26,17] cannot find symbol
+  symbol:   variable flight
+  location: class tripma.local.tripma.dto.BookingFlight.BookingFlightResponse
+[ERROR] /D:/HocTap/tripma/tripma/src/main/java/tripma/local/tripma/dto/BookingFlight/BookingFlightResponse.java:[27,17] cannot find symbol
+  symbol:   variable flight
+  location: class tripma.local.tripma.dto.BookingFlight.BookingFlightResponse
+[INFO] 12 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.657 s
+[INFO] Finished at: 2026-08-12T11:17:33+07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.15.0:compile (default-compile) on project tripma: Compilation failure: Compilation failure: 
+[ERROR] /D:/HocTap/tripma/tripma/src/main/java/tripma/local/tripma/service/BookingService.java:[179,41] cannot find symbol
+[ERROR]   symbol:   variable flightBookingResponse
+[ERROR]   location: class tripma.local.tripma.service.BookingService
+[ERROR] /D:/HocTap/tripma/tripma/src/main/java/tripma/local/tripma/service/BookingService.java:[183,41] cannot find symbol
+[ERROR]   symbol:   variable hotelBookingResponse
+[ERROR]   location: class tripma.local.tripma.service.BookingService
+[ERROR] /D:/HocTap/tripma/tripma/src/main/java/tripma/local/tripma/service/BookingService.java:[187,41] cannot find symbol
+[ERROR]   symbol:   variable packageBookingResponse
+[ERROR]   location: class tripma.local.tripma.service.BookingService
+[ERROR] /D:/HocTap/tripma/tripma/src/main/java/tripma/local/tripma/dto/BookingFlight/BookingFlightResponse.java:[19,30] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable bookingFlight of type tripma.local.tripma.entity.BookingFlight
+[ERROR] /D:/HocTap/tripma/tripma/src/main/java/tripma/local/tripma/dto/BookingFlight/BookingFlightResponse.java:[20,30] cannot find symbol
+[ERROR]   symbol:   method getFlightNumber()
+[ERROR]   location: variable bookingFlight of type tripma.local.tripma.entity.BookingFlight
+[ERROR] /D:/HocTap/tripma/tripma/src/main/java/tripma/local/tripma/dto/BookingFlight/BookingFlightResponse.java:[21,30] cannot find symbol
+[ERROR]   symbol:   method getAirlineId()
+[ERROR]   location: variable bookingFlight of type tripma.local.tripma.entity.BookingFlight
+[ERROR] /D:/HocTap/tripma/tripma/src/main/java/tripma/local/tripma/dto/BookingFlight/BookingFlightResponse.java:[22,30] cannot find symbol
+[ERROR]   symbol:   method getDepartureAirportId()
+[ERROR]   location: variable bookingFlight of type tripma.local.tripma.entity.BookingFlight
+[ERROR] /D:/HocTap/tripma/tripma/src/main/java/tripma/local/tripma/dto/BookingFlight/BookingFlightResponse.java:[23,17] cannot find symbol
+[ERROR]   symbol:   variable flight
+[ERROR]   location: class tripma.local.tripma.dto.BookingFlight.BookingFlightResponse
+[ERROR] /D:/HocTap/tripma/tripma/src/main/java/tripma/local/tripma/dto/BookingFlight/BookingFlightResponse.java:[24,17] cannot find symbol
+[ERROR]   symbol:   variable flight
+[ERROR]   location: class tripma.local.tripma.dto.BookingFlight.BookingFlightResponse
+[ERROR] /D:/HocTap/tripma/tripma/src/main/java/tripma/local/tripma/dto/BookingFlight/BookingFlightResponse.java:[25,17] cannot find symbol
+[ERROR]   symbol:   variable flight
+[ERROR]   location: class tripma.local.tripma.dto.BookingFlight.BookingFlightResponse
+[ERROR] /D:/HocTap/tripma/tripma/src/main/java/tripma/local/tripma/dto/BookingFlight/BookingFlightResponse.java:[26,17] cannot find symbol
+[ERROR]   symbol:   variable flight
+[ERROR]   location: class tripma.local.tripma.dto.BookingFlight.BookingFlightResponse
+[ERROR] /D:/HocTap/tripma/tripma/src/main/java/tripma/local/tripma/dto/BookingFlight/BookingFlightResponse.java:[27,17] cannot find symbol
+[ERROR]   symbol:   variable flight
+[ERROR]   location: class tripma.local.tripma.dto.BookingFlight.BookingFlightResponse
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

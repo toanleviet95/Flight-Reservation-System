@@ -8,8 +8,8 @@ public record PackageBookingResponse(
         Integer packageId) {
     public static PackageBookingResponse fromEntity(PackageBooking packageBooking) {
         return new PackageBookingResponse(
-                packageBooking.getPackageBookingId(),
-                packageBooking.getBookingId(),
-                packageBooking.getPackageId());
+                packageBooking.getPackage_booking_id(),
+                packageBooking.getBooking_id(),
+                packageBooking.getPackage_id());
     }
 }

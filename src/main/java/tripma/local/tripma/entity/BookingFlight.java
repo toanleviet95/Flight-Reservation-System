@@ -2,7 +2,6 @@ package tripma.local.tripma.entity;
 
 import jakarta.persistence.*;
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "booking_flight")
@@ -10,7 +9,7 @@ public class BookingFlight {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "booking_flight_id")
-    private Long id;
+    private Integer bookingFlightId;
 
     @Column(name = "booking_id")
     private Integer bookingId;
@@ -18,25 +17,24 @@ public class BookingFlight {
     @Column(name = "flight_id")
     private Integer flightId;
 
-    @Column(name = "seat_number")
-    private String seatNumber;
+    @Column(name = "direction")
+    private String direction;
+
+    @Column(name = "cabin_class")
+    private String cabinClass;
 
     @Column(name = "price")
     private BigDecimal price;
 
-    @Column(name = "booking_time")
-    private LocalDateTime bookingTime;
-
     public BookingFlight() {
     }
 
-    // Getters & Setters
-    public Long getId() {
-        return id;
+    public Integer getBookingFlightId() {
+        return bookingFlightId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setBookingFlightId(Integer bookingFlightId) {
+        this.bookingFlightId = bookingFlightId;
     }
 
     public Integer getBookingId() {
@@ -55,12 +53,20 @@ public class BookingFlight {
         this.flightId = flightId;
     }
 
-    public String getSeatNumber() {
-        return seatNumber;
+    public String getDirection() {
+        return direction;
     }
 
-    public void setSeatNumber(String seatNumber) {
-        this.seatNumber = seatNumber;
+    public void setDirection(String direction) {
+        this.direction = direction;
+    }
+
+    public String getCabinClass() {
+        return cabinClass;
+    }
+
+    public void setCabinClass(String cabinClass) {
+        this.cabinClass = cabinClass;
     }
 
     public BigDecimal getPrice() {
@@ -69,13 +75,5 @@ public class BookingFlight {
 
     public void setPrice(BigDecimal price) {
         this.price = price;
-    }
-
-    public LocalDateTime getBookingTime() {
-        return bookingTime;
-    }
-
-    public void setBookingTime(LocalDateTime bookingTime) {
-        this.bookingTime = bookingTime;
     }
 }
