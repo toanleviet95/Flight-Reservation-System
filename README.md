@@ -82,3 +82,7 @@ src/main/java/tripma/local/tripma/
 ## CI
 
 Pull requests are automatically reviewed by Claude via GitHub Actions ([.github/workflows/claude_pr_review.yml](.github/workflows/claude_pr_review.yml)). Comment `@claude` on a PR to trigger a re-review.
+
+## References
+
+UI Figma: https://www.figma.com/community/file/911320742349428744/tripma-flight-booking-web-app
