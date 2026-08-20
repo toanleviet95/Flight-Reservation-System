@@ -1,4 +1,4 @@
-package tripma.local.tripma.dto;
+package tripma.local.tripma.dto.Flight;
 
 import tripma.local.tripma.entity.Flight;
 import java.math.BigDecimal;
