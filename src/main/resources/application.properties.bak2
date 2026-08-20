@@ -1,0 +1,17 @@
+spring.application.name=tripma
+spring.config.import=optional:file:.env[.properties]
+
+spring.datasource.url=${DB_URL}
+spring.datasource.username=${DB_USERNAME}
+spring.datasource.password=${DB_PASSWORD}
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.format_sql=true
+
+spring.sql.init.mode=never
+springdoc.api-docs.path=/v3/api-docs
+springdoc.swagger-ui.path=/swagger-ui.html
+server.port=8080

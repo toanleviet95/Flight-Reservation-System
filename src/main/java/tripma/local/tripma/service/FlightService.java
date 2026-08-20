@@ -1,6 +1,7 @@
 package tripma.local.tripma.service;
 
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import tripma.local.tripma.dto.Flight.FlightRequest;
 import tripma.local.tripma.dto.Flight.FlightResponse;
 import tripma.local.tripma.entity.Flight;
@@ -10,6 +11,7 @@ import tripma.local.tripma.repository.FlightRepository;
 import java.util.List;
 
 @Service
+@Transactional
 public class FlightService {
 
     private final FlightRepository flightRepository;
