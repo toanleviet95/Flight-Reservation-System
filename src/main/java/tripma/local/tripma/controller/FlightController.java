@@ -7,10 +7,11 @@ import tripma.local.tripma.dto.Flight.FlightRequest;
 import tripma.local.tripma.dto.Flight.FlightResponse;
 import tripma.local.tripma.service.FlightService;
 
-import java.util.List;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 @RestController
-@RequestMapping("/api/flights")
+@RequestMapping("/api/v1/flights")
 public class FlightController {
 
     private final FlightService flightService;
@@ -20,8 +21,8 @@ public class FlightController {
     }
 
     @GetMapping
-    public List<FlightResponse> findAll() {
-        return flightService.findAll();
+    public Page<FlightResponse> findAll(Pageable pageable) {
+        return flightService.findAll(pageable);
     }
 
     @GetMapping("/{id}")

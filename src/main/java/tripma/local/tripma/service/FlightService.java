@@ -1,15 +1,18 @@
 package tripma.local.tripma.service;
 
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import tripma.local.tripma.dto.Flight.FlightRequest;
 import tripma.local.tripma.dto.Flight.FlightResponse;
 import tripma.local.tripma.entity.Flight;
 import tripma.local.tripma.exception.ResourceNotFoundException;
 import tripma.local.tripma.repository.FlightRepository;
 
-import java.util.List;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 @Service
+@Transactional
 public class FlightService {
 
     private final FlightRepository flightRepository;
@@ -18,8 +21,8 @@ public class FlightService {
         this.flightRepository = flightRepository;
     }
 
-    public List<FlightResponse> findAll() {
-        return flightRepository.findAll().stream().map(FlightResponse::from).toList();
+    public Page<FlightResponse> findAll(Pageable pageable) {
+        return flightRepository.findAll(pageable).map(FlightResponse::from);
     }
 
     public FlightResponse findById(Long id) {
@@ -28,19 +31,17 @@ public class FlightService {
 
     public FlightResponse create(FlightRequest request) {
         Flight flight = new Flight();
-        flight.setFlightNumber(request.flightNumber());
-        flight.setAirlineId(request.airlineId());
-        flight.setDepartureAirportId(request.departureAirportId());
-        flight.setArrivalAirportId(request.arrivalAirportId());
-        flight.setDepartureTime(request.departureTime());
-        flight.setArrivalTime(request.arrivalTime());
-        flight.setBasePrice(request.basePrice());
-        flight.setAircraftId(request.aircraftId());
+        applyRequest(flight, request);
         return FlightResponse.from(flightRepository.save(flight));
     }
 
     public FlightResponse update(Long id, FlightRequest request) {
         Flight flight = getFlightOrThrow(id);
+        applyRequest(flight, request);
+        return FlightResponse.from(flightRepository.save(flight));
+    }
+
+    private void applyRequest(Flight flight, FlightRequest request) {
         flight.setFlightNumber(request.flightNumber());
         flight.setAirlineId(request.airlineId());
         flight.setDepartureAirportId(request.departureAirportId());
@@ -49,7 +50,6 @@ public class FlightService {
         flight.setArrivalTime(request.arrivalTime());
         flight.setBasePrice(request.basePrice());
         flight.setAircraftId(request.aircraftId());
-        return FlightResponse.from(flightRepository.save(flight));
     }
 
     public void delete(Long id) {
