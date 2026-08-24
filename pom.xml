@@ -5,7 +5,9 @@
 	
 	
 	
+	
 	xmlns="http://maven.apache.org/POM/4.0.0" 
+	
 	
 	
 	
@@ -104,6 +106,10 @@
 			<artifactId>lombok</artifactId>
 			<version>1.18.30</version>
 			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-crypto</artifactId>
 		</dependency>
 	</dependencies>
 	<build>
