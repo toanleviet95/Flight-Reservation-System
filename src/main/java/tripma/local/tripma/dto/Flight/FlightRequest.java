@@ -1,4 +1,4 @@
-package tripma.local.tripma.dto;
+package tripma.local.tripma.dto.Flight;
 
 import jakarta.validation.constraints.AssertTrue;
 import jakarta.validation.constraints.NotBlank;
@@ -21,7 +21,7 @@ public record FlightRequest(
     @AssertTrue(message = "Arrival time must be after departure time")
     public boolean isArrivalTimeValid() {
         if (departureTime == null || arrivalTime == null) {
-            return true; // Let @NotNull handle this
+            return true;
         }
         return arrivalTime.isAfter(departureTime);
     }

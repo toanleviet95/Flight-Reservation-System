@@ -1,4 +1,4 @@
-package tripma.local.tripma.dto;
+package tripma.local.tripma.dto.Flight;
 
 import tripma.local.tripma.entity.Flight;
 import java.math.BigDecimal;
@@ -14,6 +14,7 @@ public record FlightResponse(
         LocalDateTime arrivalTime,
         BigDecimal basePrice,
         Integer aircraftId) {
+
     public static FlightResponse from(Flight flight) {
         return new FlightResponse(
                 flight.getId(),

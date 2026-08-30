@@ -21,10 +21,12 @@ public class FlightService {
         this.flightRepository = flightRepository;
     }
 
+    @Transactional(readOnly = true)
     public Page<FlightResponse> findAll(Pageable pageable) {
         return flightRepository.findAll(pageable).map(FlightResponse::from);
     }
 
+    @Transactional(readOnly = true)
     public FlightResponse findById(Long id) {
         return FlightResponse.from(getFlightOrThrow(id));
     }
@@ -41,6 +43,10 @@ public class FlightService {
         return FlightResponse.from(flightRepository.save(flight));
     }
 
+    public void delete(Long id) {
+        flightRepository.delete(getFlightOrThrow(id));
+    }
+
     private void applyRequest(Flight flight, FlightRequest request) {
         flight.setFlightNumber(request.flightNumber());
         flight.setAirlineId(request.airlineId());
@@ -50,10 +56,6 @@ public class FlightService {
         flight.setArrivalTime(request.arrivalTime());
         flight.setBasePrice(request.basePrice());
         flight.setAircraftId(request.aircraftId());
-    }
-
-    public void delete(Long id) {
-        flightRepository.delete(getFlightOrThrow(id));
     }
 
     private Flight getFlightOrThrow(Long id) {
