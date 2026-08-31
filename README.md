@@ -43,11 +43,11 @@ cp .env.example .env
 
 `.env` (git-ignored) is loaded automatically at startup via `spring.config.import` in [application.properties](src/main/resources/application.properties):
 
-| Variable | Description |
-|---|---|
-| `DB_URL` | JDBC URL, e.g. `jdbc:mysql://localhost:3307/tripma_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8` |
-| `DB_USERNAME` | MySQL username |
-| `DB_PASSWORD` | MySQL password |
+| Variable        | Description                                                                                                                                                  |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `DB_URL`      | JDBC URL, e.g.`jdbc:mysql://localhost:3307/tripma_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8` |
+| `DB_USERNAME` | MySQL username                                                                                                                                               |
+| `DB_PASSWORD` | MySQL password                                                                                                                                               |
 
 ### 3. Schema
 
@@ -65,7 +65,6 @@ The app starts on **http://localhost:8080**.
 
 Swagger UI: http://localhost:8080/swagger-ui.html
 OpenAPI spec: http://localhost:8080/v3/api-docs
-
 
 ## Project Structure
 
