@@ -2,24 +2,25 @@ package tripma.local.tripma.dto.HotelBooking;
 
 import tripma.local.tripma.entity.HotelBooking;
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 public record HotelBookingResponse(
-        Integer hotel_booking_id,
-        Integer booking_id,
-        Integer hotel_id,
-        LocalDateTime check_in,
-        LocalDateTime check_out,
+        Integer hotelBookingId,
+        Integer bookingId,
+        Integer hotelId,
+        LocalDate checkIn,
+        LocalDate checkOut,
         Integer guests,
-        BigDecimal total_price) {
+        BigDecimal totalPrice) {
+
     public static HotelBookingResponse fromEntity(HotelBooking hotelBooking) {
         return new HotelBookingResponse(
-                hotelBooking.getHotel_booking_id(),
-                hotelBooking.getBooking_id(),
-                hotelBooking.getHotel_id(),
-                hotelBooking.getCheck_in(),
-                hotelBooking.getCheck_out(),
+                hotelBooking.getHotelBookingId(),
+                hotelBooking.getBookingId(),
+                hotelBooking.getHotelId(),
+                hotelBooking.getCheckIn(),
+                hotelBooking.getCheckOut(),
                 hotelBooking.getGuests(),
-                hotelBooking.getTotal_price());
+                hotelBooking.getTotalPrice());
     }
 }

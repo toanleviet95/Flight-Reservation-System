@@ -1,12 +1,16 @@
 package tripma.local.tripma.dto.HotelBooking;
 
-import java.time.LocalDateTime;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
+
+import java.math.BigDecimal;
+import java.time.LocalDate;
 
 public record HotelBookingRequest(
-        Integer userId,
-        Integer hotelId,
-        LocalDateTime checkIn,
-        LocalDateTime checkOut,
-        Integer guests,
-        Double discountAmount) {
+        @NotNull Integer userId,
+        @NotNull Integer hotelId,
+        @NotNull LocalDate checkIn,
+        @NotNull LocalDate checkOut,
+        @NotNull @Positive Integer guests,
+        BigDecimal discountAmount) {
 }

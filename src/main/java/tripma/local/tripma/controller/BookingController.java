@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.*;
 import tripma.local.tripma.dto.Booking.BookingRequest;
 import tripma.local.tripma.dto.Booking.BookingResponse;
 import tripma.local.tripma.dto.HotelBooking.HotelBookingRequest;
-import tripma.local.tripma.dto.HotelBooking.HotelBookingResponse;
 import tripma.local.tripma.service.BookingService;
 
 @RestController

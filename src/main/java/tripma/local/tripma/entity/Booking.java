@@ -1,6 +1,7 @@
 package tripma.local.tripma.entity;
 
 import jakarta.persistence.*;
+import java.math.BigDecimal;
 
 @Entity
 @Table(name = "booking")
@@ -13,9 +14,9 @@ public class Booking {
     private String type;
     private String status;
     private String discountCode;
-    @Column(name = "dicount_amount")
-    private Double discountAmount;
-    private Double totalPrice;
+    @Column(name = "discount_amount")
+    private BigDecimal discountAmount;
+    private BigDecimal totalPrice;
 
     public Booking() {
     }
@@ -69,19 +70,19 @@ public class Booking {
         this.discountCode = discountCode;
     }
 
-    public Double getDiscountAmount() {
+    public BigDecimal getDiscountAmount() {
         return discountAmount;
     }
 
-    public void setDiscountAmount(Double discountAmount) {
+    public void setDiscountAmount(BigDecimal discountAmount) {
         this.discountAmount = discountAmount;
     }
 
-    public Double getTotalPrice() {
+    public BigDecimal getTotalPrice() {
         return totalPrice;
     }
 
-    public void setTotalPrice(Double totalPrice) {
+    public void setTotalPrice(BigDecimal totalPrice) {
         this.totalPrice = totalPrice;
     }
 }
