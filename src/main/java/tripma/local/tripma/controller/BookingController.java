@@ -9,7 +9,7 @@ import tripma.local.tripma.dto.HotelBooking.HotelBookingRequest;
 import tripma.local.tripma.service.BookingService;
 
 @RestController
-@RequestMapping("/api/bookings")
+@RequestMapping("/api/v1/bookings")
 public class BookingController {
 
     private final BookingService bookingService;

@@ -11,7 +11,6 @@ import tripma.local.tripma.dto.Booking.BookingResponse;
 import tripma.local.tripma.dto.Booking.FlightLegRequest;
 import tripma.local.tripma.dto.BookingFlight.BookingFlightResponse;
 import tripma.local.tripma.dto.HotelBooking.HotelBookingRequest;
-import tripma.local.tripma.dto.HotelBooking.HotelBookingResponse;
 import tripma.local.tripma.entity.Booking;
 import tripma.local.tripma.entity.BookingFlight;
 import tripma.local.tripma.entity.Flight;
@@ -25,6 +24,7 @@ import tripma.local.tripma.repository.HotelBookingRepository;
 import tripma.local.tripma.repository.HotelRepository;
 
 @Service
+@Transactional
 public class BookingService {
 
     private final BookingRepository bookingRepository;
@@ -49,7 +49,6 @@ public class BookingService {
         this.flightRepository = flightRepository;
     }
 
-    @Transactional
     public BookingResponse createFlightBooking(BookingRequest request) {
         List<FlightLegRequest> legs = request.flights();
         List<Flight> flights = legs.stream()
@@ -87,7 +86,6 @@ public class BookingService {
         return BookingResponse.from(booking, flightResponses);
     }
 
-    @Transactional
     public BookingResponse createHotelBooking(HotelBookingRequest request) {
         Hotel hotel = hotelRepository.findById(request.hotelId())
                 .orElseThrow(() -> new ResourceNotFoundException(
