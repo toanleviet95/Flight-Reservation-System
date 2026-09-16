@@ -21,7 +21,7 @@ public class BaggageService {
     }
 
     @Transactional
-    public BaggageResponse addBaggage(BaggageRequest request) {
+    public BaggageResponse create(BaggageRequest request) {
         Baggage baggage = new Baggage();
         baggage.setPassengerId(request.passengerId());
         baggage.setFlightId(request.flightId());
@@ -49,8 +49,4 @@ public class BaggageService {
         return baggageRepository.findById(baggageId)
                 .orElseThrow(() -> new ResourceNotFoundException("Baggage not found with id: " + baggageId));
     }
-
-    // public Double calculateFee(BaggageRequest request) {
-    //     return null;
-    // }
 }

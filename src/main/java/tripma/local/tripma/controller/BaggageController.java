@@ -24,8 +24,8 @@ public class BaggageController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public BaggageResponse addBaggage(@Valid @RequestBody BaggageRequest request) {
-        return baggageService.addBaggage(request);
+    public BaggageResponse create(@Valid @RequestBody BaggageRequest request) {
+        return baggageService.create(request);
     }
 
     @PutMapping("/{baggageId}")
