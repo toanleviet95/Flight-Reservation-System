@@ -22,10 +22,12 @@ public class HotelService {
         this.hotelRepository = hotelRepository;
     }
 
+    @Transactional(readOnly = true)
     public Page<HotelResponse> findAll(Pageable pageable) {
         return hotelRepository.findAll(pageable).map(HotelResponse::fromEntity);
     }
 
+    @Transactional(readOnly = true)
     public HotelResponse findById(Integer hotel_id) {
         return HotelResponse.fromEntity(getHotelOrThrow(hotel_id));
     }
