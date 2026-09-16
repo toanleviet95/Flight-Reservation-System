@@ -216,7 +216,7 @@ class BookingControllerTest {
                 BookingRequest request = new BookingRequest(1, "BK-999", null, null, null, List.of(leg));
 
                 when(bookingService.createFlightBooking(any(BookingRequest.class)))
-                                .thenThrow(new ResourceNotFoundException("Không tìm thấy chuyến bay với ID 999"));
+                                .thenThrow(new ResourceNotFoundException("Flight not found with id: 999"));
 
                 mockMvc.perform(post("/api/v1/bookings/flight")
                                 .contentType(MediaType.APPLICATION_JSON)
@@ -355,7 +355,7 @@ class BookingControllerTest {
                                 2, null);
 
                 when(bookingService.createHotelBooking(any(HotelBookingRequest.class)))
-                                .thenThrow(new ResourceNotFoundException("Không tìm thấy khách sạn với ID 999"));
+                                .thenThrow(new ResourceNotFoundException("Hotel not found with id: 999"));
 
                 mockMvc.perform(post("/api/v1/bookings/hotel")
                                 .contentType(MediaType.APPLICATION_JSON)

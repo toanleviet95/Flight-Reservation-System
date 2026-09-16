@@ -54,7 +54,7 @@ public class BookingService {
         List<Flight> flights = legs.stream()
                 .map(leg -> flightRepository.findById(Long.valueOf(leg.flightId()))
                         .orElseThrow(() -> new ResourceNotFoundException(
-                                "Không tìm thấy chuyến bay với ID " + leg.flightId())))
+                                "Flight not found with id: " + leg.flightId())))
                 .toList();
         Booking booking = new Booking();
         booking.setUserId(request.userId());
@@ -89,11 +89,11 @@ public class BookingService {
     public BookingResponse createHotelBooking(HotelBookingRequest request) {
         Hotel hotel = hotelRepository.findById(request.hotelId())
                 .orElseThrow(() -> new ResourceNotFoundException(
-                        "Không tìm thấy khách sạn với ID " + request.hotelId()));
+                        "Hotel not found with id: " + request.hotelId()));
 
         long numberOfNights = ChronoUnit.DAYS.between(request.checkIn(), request.checkOut());
         if (numberOfNights <= 0) {
-            throw new IllegalArgumentException("Lỗi: Ngày trả phòng phải nằm sau ngày nhận phòng!");
+            throw new IllegalArgumentException("Error: Check-out date must be after check-in date!");
         }
 
         BigDecimal pricePerNight = hotel.getPrice_per_night() != null
